@@ -1,4 +1,3 @@
 # inventory-management-system-react
-Inventory management dashboard
+* The Updated Frontend and Backend code
 
-Crud operations 
