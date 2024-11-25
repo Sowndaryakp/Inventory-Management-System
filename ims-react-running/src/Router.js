@@ -1,7 +1,6 @@
+import { jsx as _jsx } from "react/jsx-runtime";
 import { createBrowserRouter } from "react-router-dom";
-
 import { Applayout } from "./components/layouts/AppLayout";
-import { AdminLayout } from "./components/layouts/AdminLayout";
 import NoMatch from "./pages/NoMatch";
 import Home from "./pages/Home";
 import Empty from "./pages/Empty";
@@ -9,68 +8,65 @@ import Inventory from "./pages/Inventory";
 import Batch from "./pages/Batch";
 import Location from "./pages/Location";
 import AdminDashboard from "./pages/AdminDashboard";
-import DepartmentDashboard from "./components/allcards/DepartmentCard";
 // import CategoryDashboard from "./pages/CategoryCard";
 import AddDataDashboard from "./pages/AddDatadashboard";
 import ApproveRequests from "./pages/ApproveRequests";
-import CreateTools from "./pages/CreateTools";
 import Sample from "./pages/Sample";
 import UserRegister from "./pages/UserRegister";
 import Login from "./pages/Login";
 import CalibrationsAlerts from "./pages/CalibrationsAlertsPage";
-
 export const router = createBrowserRouter([
     {
         path: "/",
-        element: <Applayout />,
+        element: _jsx(Applayout, {}),
         children: [
             {
                 path: "",
-                element: <Home />,
+                element: _jsx(Home, {}),
             },
             {
                 path: "sample",
-                element: <Sample />,
+                element: _jsx(Sample, {}),
             },
             {
                 path: "empty",
-                element: <Empty />,
+                element: _jsx(Empty, {}),
             },
             {
                 path: "inventory",
-                element: <Inventory />,
+                element: _jsx(Inventory, {}),
             },
             {
                 path: "batch",
-                element: <Batch />,
+                element: _jsx(Batch, {}),
             },
             {
                 path: "location",
-                element: <Location />,
+                element: _jsx(Location, {}),
             },
             {
                 path: "adminDashboard",
-                element: <AdminDashboard />,
+                element: _jsx(AdminDashboard, {}),
             },
             {
                 path: "addDataDashboard",
-                element: <AddDataDashboard />,
+                element: _jsx(AddDataDashboard, {}),
             },
             {
                 path: "approveRequests",
-                element: <ApproveRequests />,
+                element: _jsx(ApproveRequests, {}),
             },
             {
                 path: "userRegister",
-                element: <UserRegister />,
+                element: _jsx(UserRegister, {}),
             },
             {
                 path: "login",
-                element: <Login />,
+                element: _jsx(Login, {}),
             },
             {
                 path: "calibrationAlerts",
-                element: <CalibrationsAlerts />,
+                element: _jsx(CalibrationsAlerts, {}),
             },
         ],
     },
@@ -90,11 +86,8 @@ export const router = createBrowserRouter([
     // },
     {
         path: "*",
-        element: <NoMatch />,
+        element: _jsx(NoMatch, {}),
     },
-    
-], 
-{
+], {
     basename: '/inventorymanagement/'
-}
-)
+});

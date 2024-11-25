@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import CreateBatch from '../forms/createBatch';
+import CreateBatch from '../forms/CreateBatch';
 import CategoryTable from '../tables/CategoryTable'; // Import the CategoryTable component
 
 const CategoryDashboard: React.FC = () => {
